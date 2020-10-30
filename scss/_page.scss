@@ -60,20 +60,27 @@
 }
 /* breadcrumbs */
 .breadcrumbs {
-	font-size: 16px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    margin-bottom: -7px;
+    .container {padding: 12px}
 	ul {
-		@include ul-default;
+		@include ul-default();
 		li {
 			padding: 5px 0px;
-			color: #3361eb;
+			color: $main;
 			@include inline-block;
 			a {
-				text-decoration: none;
+                text-decoration: none;
+                color: #333333;
+                &:hover {color:$main} 
 			}
 			&:after {
-				content: '/';
-				margin: 0px 2px 0px 7px;
-				color: #282727;
+				content: ' ';
+                margin: 8px 8px 0px 11px;
+                width: 4px; height: 4px;
+                background-color: #999;
+                border-radius: 50%;
 				@include inline-block;
 			}
 			&:last-of-type:after {
@@ -213,7 +220,7 @@
 
 .call--btn {
     position: fixed;
-    bottom: 100px;
+    bottom: 160px;
     right: 111px;
     display: grid;
     place-items: center;

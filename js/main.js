@@ -41,11 +41,63 @@ function sliders() {
         dots: true,
         arrows: false,
     });
+
+    $('.else-slider1').slick({
+        autoplay: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true
+    });
+
+    $('.else-slider2').slick({
+        autoplay: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true
+    });
+
+    $('.else-slider3').slick({
+        autoplay: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true
+    });
 }
 
 sliders();
 
 $(function(){
+
+    $("#content>div").hide(); // Скрываем содержание
+	$("#tabs li:first").attr("id","current"); // Активируем первую закладку
+	$("#content div:first").fadeIn(); // Выводим содержание
+    
+    $('#tabs a').click(function(e) {
+        e.preventDefault();        
+        $("#content>div").hide(); //Скрыть все сожержание
+        $("#tabs li").attr("id",""); //Сброс ID
+        $(this).parent().attr("id","current"); // Активируем закладку
+        $('#' + $(this).attr('title')).fadeIn(); // Выводим содержание текущей закладки
+    });
+
+    $("#content2>div").hide(); // Скрываем содержание
+	$("#tabs2 li:first").attr("id","current"); // Активируем первую закладку
+	$("#content2 div:first").fadeIn(); // Выводим содержание
+    
+    $('#tabs2 a').click(function(e) {
+        e.preventDefault();        
+        $("#content2>div").hide(); //Скрыть все сожержание
+        $("#tabs2 li").attr("id",""); //Сброс ID
+        $(this).parent().attr("id","current"); // Активируем закладку
+        $('#' + $(this).attr('title')).fadeIn(); // Выводим содержание текущей закладки
+    });
+
+    
+
+
     $('.open--modal').on('click', function(){
         var modal = $(this).attr('data-modal');
         $(modal).fadeIn();

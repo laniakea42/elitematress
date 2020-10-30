@@ -206,10 +206,9 @@ body {
 h1 {
 	font-family: $semi;
 	font-size: 36px;
-	text-align: center;
 	color: #000;
 	line-height: 1;
-	margin: 0 0 35px;
+	margin: 0 0 40px;
     a {
         font-size: 42px;
     }
@@ -243,7 +242,7 @@ h2 {
     }
 }
 h3 {
-	font-family: $bold;
+	font-family: $semi;
 	font-size: 30px;
 	color: #000;
 	@media screen and (max-width: 1024px) {
@@ -254,7 +253,7 @@ h3 {
 	}
 }
 h4 {
-	font-family: $bold;
+	font-family: $semi;
 	font-size: 22px;
 	color: #000;
     @media screen and (max-width: 1024px) {
@@ -276,7 +275,8 @@ h6 {
 	color: #000;
 }
 
-p { margin: 0 0 15px; line-height: 24px;}
+p { margin: 0 0 24px; line-height: 24px;}
+
 
 a {
 	color: $main;
@@ -506,7 +506,7 @@ input[type="password"] {
 	height: 30px;
 	position: absolute;
 	left: 0;
-	top: -5px;
+	top: -6.5px;
 	padding: 0;
 	margin: 0;
 	outline: none;
@@ -706,6 +706,7 @@ body {padding-top: 148px;}
 		height: 30px;
 		object-fit: contain; object-position: left center;
 	}
+	&.active {color: $main; pointer-events: none;}
 }
 
 .nav {
