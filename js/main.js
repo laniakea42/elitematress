@@ -11,19 +11,18 @@ function sliders() {
     $('.cat--unit__for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         fade: true,
         asNavFor: '.cat--unit__nav'
     });
     $('.cat--unit__nav').slick({
         autoplay: true,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '.cat--unit__for',
         dots: false,
-        arrows: true,
+        arrows: false,
         focusOnSelect: true,
-        vertical: true,
         responsive: [
             {
                 breakpoint: 600,
@@ -47,7 +46,15 @@ function sliders() {
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: false,
-        arrows: true
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('.else-slider2').slick({
@@ -55,7 +62,15 @@ function sliders() {
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: false,
-        arrows: true
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('.else-slider3').slick({
@@ -63,7 +78,15 @@ function sliders() {
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: false,
-        arrows: true
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 }
 

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Contacts</title>
+	<title>Контакты</title>
 	<link rel="stylesheet" href="css/libs.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -98,75 +98,181 @@
 	
 	<div class="call--btn"><i class="fa fa-phone" aria-hidden="true"></i></div>
 	
-	<div class="modal" id="modal-success-send">
+	<div class="modal" id="contactus">
+		<div class="modal__layer"></div>
+		<div class="modal__block">
+			<a href="#" class="close"></a>
+			<div class="m-hat">
+				<h4>Связаться с нами</h4>
+				<div class="comm">Оставьте свой телефон, и мы свяжемся с вами в ближайшее время</div>
+			</div>
+	
+			<div class="m-body">
+				<form action="">
+					<input type="text" required="" placeholder="Ваше имя">
+					<input type="tel" required="" placeholder="Номер телефона" class="tel" im-insert="true">
+					<div class="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfycasZAAAAAOleQj_j_cJoz1tKKWUcEs1p_Thw&amp;co=aHR0cDovL2x1Y2t5ZW5nbGlzaC45ei5rejo4MA..&amp;hl=en&amp;v=6TWYOsKNtRFaLeFqv5xN42-l&amp;size=normal&amp;cb=7idt9xxob5ks" width="304" height="78" role="presentation" name="a-xh09sx8p8cox" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response-2" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+					<div class="policy">
+						Нажимая на кнопку «Отправить» вы соглашаетесь с
+						<a href="#">политикой конфиденциальности</a>
+					</div>
+					<button class="btn" type="submit" data-modal="#success-send"><span>Отправить</span></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal" id="success-send">
 		<div class="modal__layer"></div>
 		<div class="modal__block">
 			<a href="#" class="close"></a>
 			<h4>Ваша заявка успешно отправлена</h4>
 		</div>
 	</div>
+	
+	<div class="modal" id="success-msg">
+		<div class="modal__layer"></div>
+		<div class="modal__block">
+			<a href="#" class="close"></a>
+			<h4>Ваше сообщение успешно отправлено</h4>
+		</div>
+	</div>
+	<div class="wrapper cts-page page">
 
-    <footer class="footer">
-      <div class="f_upper">
-        <div class="container f_grid">
-          <a href="index.html" class="f_logo-link">
-            <img src="./img/logo.png" alt="">
-          </a>
-    
-          <div class="f_col">
-            <div class="f_title">Каталог</div>
-            <ul class="check--list">
-              <li><a href="catalog.html">Матрасы</a></li>
-              <li><a href="catalog.html" class="active">Наматрасники</a></li>
-              <li><a href="catalog.html">Подушки</a></li>
-              <li><a href="catalog.html">Постельное белье</a></li>
-            </ul>
-          </div>
-    
-          <div class="f_col">
-            <div class="f_title">Информация</div>
-            <ul class="check--list">
-              <li><a href="about.html">О компании</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Отзывы</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-          </div>
-    
-          <div class="f_cts">
+		<div class="breadcrumbs">
+			<div class="container">
+				<ul>
+          <li><a href="index.html">Главная</a></li>
+					<li>Контакты</li>
+				</ul>
+			</div>
+    </div>
+
+    <main>
+      <div class="container">
+        <h1>Контакты</h1>
+      </div>
+      <div class="wide-container cts_info">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae47c93111c5a8def193a3c79364ae9534b7ae2a660c230504a63a1de763cba2b&amp;source=constructor" width="100%" height="520" frameborder="0"></iframe>
+        <div class="cts_info--block">
+          <div class="content">
             <div class="col--phone">
-              <a href="tel:+77086274818">+7 (708) 627 48 18</a>
-              <a href="tel:+77776667172">+7 (777) 666 71 72</a>
-            </div>
-            <div class="col--location">
-              <span>Алматинская область,
-                пос. Кызыл Гайрат, ул. Конаева 27</span>
-            </div>
-            <div class="col--email">
-              <a href="mailto:info@almatras.kz">info@almatras.kz</a>
-            </div>
+              <a href="tel:87776667172">+7 (708) 627 48 18</a>
+              <a href="tel:87776667172">+7 (777) 666 71 72</a>
+						</div>
+						<div class="col--location">
+							<span>Алматинская область, пос. Кызыл Гайрат, ул. Конаева 27</spa>
+						</div>
+						<div class="col--email">
+							<a href="mailto:info@almatras.kz">info@almatras.kz</a>
+						</div>
+
+						<div class="socials flex senter">
+							<a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							<a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="#" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+						</div>
+
           </div>
         </div>
       </div>
-    
-      <div class="f_bottom">
-        <div class="container flex spb center">
-          <div class="copy">Copyright &copy; 2020 Almatras. All rights reserved</div>
-          <div class="socials flex senter">
-            <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+		</main>
+		
+		<section class="cts-form">
+			<div class="container">
+				<h2>Напишите нам</h2>
+				<div class="desc">Оставьте свой телефон, и мы свяжемся с вами в ближайшее время</div>
+				<form action="">
+					<div class="cts-form__grid">
+						<input type="text" required="" placeholder="Ваше имя">
+						<input type="tel" class="tel" required="" placeholder="Номер телефона" im-insert="true">
+						<input type="email" required="" placeholder="Электронная почта">
+						<textarea placeholder="Текст сообщения"></textarea>
+						<div class="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfycasZAAAAAOleQj_j_cJoz1tKKWUcEs1p_Thw&amp;co=aHR0cDovL2x1Y2t5ZW5nbGlzaC45ei5rejo4MA..&amp;hl=en&amp;v=T9w1ROdplctW2nVKvNJYXH8o&amp;size=normal&amp;cb=nmirvxn9pj7f" width="304" height="78" role="presentation" name="a-pwvohufggojx" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response-2" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+					</div>
+
+					<div class="policy">
+						Нажимая на кнопку «Отправить» вы соглашаетесь с 
+						<a href="#">политикой конфиденциальности</a>
+					</div>
+					<button class="btn open--modal" data-modal="#success-msg" type="submit">Отправить</button>
+				</form>
+			</div>
+		</section>
+
+
+
+  </div>
+  <footer class="footer">
+    <div class="f_upper">
+      <div class="container f_grid">
+        <a href="index.html" class="f_logo-link">
+          <img src="./img/logo.png" alt="">
+        </a>
+  
+        <div class="f_col">
+          <div class="f_title">Каталог</div>
+          <ul class="check--list">
+            <li><a href="catalog.html">Матрасы</a></li>
+            <li><a href="catalog.html" class="active">Наматрасники</a></li>
+            <li><a href="catalog.html">Подушки</a></li>
+            <li><a href="catalog.html">Постельное белье</a></li>
+          </ul>
+        </div>
+  
+        <div class="f_col">
+          <div class="f_title">Информация</div>
+          <ul class="check--list">
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+  
+        <div class="f_cts">
+          <div class="col--phone">
+            <a href="tel:+77086274818">+7 (708) 627 48 18</a>
+            <a href="tel:+77776667172">+7 (777) 666 71 72</a>
           </div>
-          <div class="art-link">
-            <a href="http://art-media.kz/" target="_blank">Создание сайта</a>
-            <img src="./img/art.png" alt="">
+          <div class="col--location">
+            <span>Алматинская область,
+              пос. Кызыл Гайрат, ул. Конаева 27</span>
+          </div>
+          <div class="col--email">
+            <a href="mailto:info@almatras.kz">info@almatras.kz</a>
           </div>
         </div>
-      </div> 
-    </footer>
-    <script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/libs.js"></script>
-		<script src="js/wow.min.js"></script> <script> new WOW().init(); </script>
-		<script type="text/javascript" src="js/main.js"></script>
-</body>
-</html>
+      </div>
+    </div>
+  
+    <div class="f_bottom">
+      <div class="container flex spb center">
+        <div class="copy">Copyright &copy; 2020 Almatras. All rights reserved</div>
+        <div class="socials flex senter">
+          <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+        </div>
+        <div class="art-link">
+          <a href="http://art-media.kz/" target="_blank">Создание сайта</a>
+          <img src="./img/art.png" alt="">
+        </div>
+      </div>
+    </div> 
+  </footer>
+  <script src="js/jquery.js"></script>
+  <script src="js/libs.js"></script>
+  <script>
+    wow = new WOW({
+      boxClass:     'wow',      
+      animateClass: 'animated', 
+      offset:       0,          
+      mobile:       false,       
+      live:         true        
+  })
+  wow.init();		
+  </script>
+  <script src="js/main.js"></script>
+  </body>
+  </html>
