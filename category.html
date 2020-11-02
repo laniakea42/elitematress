@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Матрасы</title>
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="preload">
+		<div class="sk-double-bounce">
+			<div class="sk-child sk-double-bounce-1"></div>
+			<div class="sk-child sk-double-bounce-2"></div>
+		</div>
+	</div>
+	
+	<header class="header">
+		<div class="header__upper">
+			<div class="container flex spb center">
+				<a href="index.html" class="logo-link"><img src="./img/logo.png" alt=""></a>
+				<form class="search-bar">
+					<input type="text" required placeholder="Поиск по сайту">
+					<button type="submit"><img src="./img/search.svg" alt=""></button>
+				</form>
+	
+				<div class="dropdown dropdown-langs">
+					Ru
+					<div class="trigger"></div>
+					<div class="dropdown-menu">
+						<a href="#">Eng</a>
+						<a href="#">Kaz</a>
+					</div>
+				</div>
+	
+				<div class="flex h-phone-col">
+					<img src="./img/span.png" alt="" class="span-img">
+					<div class="dropdown">
+						<div class="col--phone">
+							<a href="tel:+77086274818">+7 (708) 627 48 18</a>
+						</div>
+						<div class="trigger"></div>
+						<div class="dropdown-menu">
+							<a href="tel:+77086274818">+7 (708) 627 48 19</a>
+							<a href="tel:+77086274818">+7 (708) 627 48 20</a>
+							<a href="tel:+77086274818">+7 (708) 627 48 21</a>
+						</div>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+	
+		<div class="header__bottom">
+			<div class="container">
+				<nav class="nav flex center spb">
+					<div class="dropdown nav-dropdown">
+						<div class="ham">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="trigger">Каталог</div>
+						<div class="dropdown-menu">
+							<a href="category.html">Матрасы</a>
+							<a href="category.html">Наматрасники</a>
+							<a href="category.html">Подушки</a>
+							<a href="category.html">Постельное белье</a>
+						</div>
+					</div>
+	
+					<a href="catalog.html" class="nav-link">
+						<img src="./img/1m.svg" alt="">
+						<span>Матрасы</span>
+					</a>
+	
+					<a href="catalog.html" class="nav-link">
+						<img src="./img/2m.svg" alt="">
+						<span>Наматрасники</span>
+					</a>
+	
+					<a href="catalog.html" class="nav-link">
+						<img src="./img/3m.svg" alt="">
+						<span>Подушки</span>
+					</a>
+	
+					<a href="catalog.html" class="nav-link active">
+						<img src="./img/4m.svg" alt="">
+						<span>Постельное белье</span>
+					</a>
+	
+				</nav>
+			</div>
+		</div>
+	
+	</header>
+	
+	<div class="call--btn"><i class="fa fa-phone" aria-hidden="true"></i></div>
+	
+	<div class="modal" id="contactus">
+		<div class="modal__layer"></div>
+		<div class="modal__block">
+			<a href="#" class="close"></a>
+			<div class="m-hat">
+				<h4>Связаться с нами</h4>
+				<div class="comm">Оставьте свой телефон, и мы свяжемся с вами в ближайшее время</div>
+			</div>
+	
+			<div class="m-body">
+				<form action="">
+					<input type="text" required="" placeholder="Ваше имя">
+					<input type="tel" required="" placeholder="Номер телефона" class="tel" im-insert="true">
+					<div class="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfycasZAAAAAOleQj_j_cJoz1tKKWUcEs1p_Thw&amp;co=aHR0cDovL2x1Y2t5ZW5nbGlzaC45ei5rejo4MA..&amp;hl=en&amp;v=6TWYOsKNtRFaLeFqv5xN42-l&amp;size=normal&amp;cb=7idt9xxob5ks" width="304" height="78" role="presentation" name="a-xh09sx8p8cox" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response-2" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+					<div class="policy">
+						Нажимая на кнопку «Отправить» вы соглашаетесь с
+						<a href="#">политикой конфиденциальности</a>
+					</div>
+					<button class="btn" type="submit" data-modal="#success-send"><span>Отправить</span></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal" id="success-send">
+		<div class="modal__layer"></div>
+		<div class="modal__block">
+			<a href="#" class="close"></a>
+			<h4>Ваша заявка успешно отправлена</h4>
+		</div>
+	</div>
+	
+	<div class="modal" id="success-msg">
+		<div class="modal__layer"></div>
+		<div class="modal__block">
+			<a href="#" class="close"></a>
+			<h4>Ваше сообщение успешно отправлено</h4>
+		</div>
+	</div>
+	<div class="wrapper category-page page">
+
+		<div class="breadcrumbs">
+			<div class="container">
+				<ul>
+          <li><a href="index.html">Главная</a></li>
+					<li><a href="index.html">Каталог</a></li>
+					<li>Матрасы</li>
+				</ul>
+			</div>
+    </div>
+
+    <main>
+      <div class="container">
+        <h1>Матрасы</h1>
+        <div class="category_grid">
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c1.jpg" alt="">
+              <div class="mark">Новинка</div>
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Standart-2</div>
+              <div class="card--about">Зависимые пружины</div>
+              <div class="price">от 17 480</div>
+            </div>
+          </a>
+
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c1.jpg" alt="">
+              <div class="mark mark--action">Акция</div>
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Standart-3</div>
+              <div class="card--about">Зависимые пружины</div>
+              <div class="price">от 19 760</div>
+            </div>
+          </a>
+
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c2.jpg" alt="">
+              <div class="mark mark--recommend">Рекомендуем</div>
+
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Comfort</div>
+              <div class="card--about">независимые пружины</div>
+              <div class="price">от 28 880</div>
+            </div>
+          </a>
+
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c1.jpg" alt="">
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Standart-2</div>
+              <div class="card--about">Зависимые пружины</div>
+              <div class="price">от 17 480</div>
+            </div>
+          </a>
+
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c1.jpg" alt="">
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Standart-3</div>
+              <div class="card--about">Зависимые пружины</div>
+              <div class="price">от 19 760</div>
+            </div>
+          </a>
+
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c2.jpg" alt="">
+
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Comfort</div>
+              <div class="card--about">независимые пружины</div>
+              <div class="price">от 28 880</div>
+            </div>
+          </a>
+
+          
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c1.jpg" alt="">
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Standart-2</div>
+              <div class="card--about">Зависимые пружины</div>
+              <div class="price">от 17 480</div>
+            </div>
+          </a>
+
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c1.jpg" alt="">
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Standart-3</div>
+              <div class="card--about">Зависимые пружины</div>
+              <div class="price">от 19 760</div>
+            </div>
+          </a>
+
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c2.jpg" alt="">
+
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Comfort</div>
+              <div class="card--about">независимые пружины</div>
+              <div class="price">от 28 880</div>
+            </div>
+          </a>
+
+          
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c1.jpg" alt="">
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Standart-2</div>
+              <div class="card--about">Зависимые пружины</div>
+              <div class="price">от 17 480</div>
+            </div>
+          </a>
+
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c1.jpg" alt="">
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Standart-3</div>
+              <div class="card--about">Зависимые пружины</div>
+              <div class="price">от 19 760</div>
+            </div>
+          </a>
+
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c2.jpg" alt="">
+
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Comfort</div>
+              <div class="card--about">независимые пружины</div>
+              <div class="price">от 28 880</div>
+            </div>
+          </a>
+
+          
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c1.jpg" alt="">
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Standart-2</div>
+              <div class="card--about">Зависимые пружины</div>
+              <div class="price">от 17 480</div>
+            </div>
+          </a>
+
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c1.jpg" alt="">
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Standart-3</div>
+              <div class="card--about">Зависимые пружины</div>
+              <div class="price">от 19 760</div>
+            </div>
+          </a>
+
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c2.jpg" alt="">
+
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Comfort</div>
+              <div class="card--about">независимые пружины</div>
+              <div class="price">от 28 880</div>
+            </div>
+          </a>
+
+          
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c1.jpg" alt="">
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Standart-2</div>
+              <div class="card--about">Зависимые пружины</div>
+              <div class="price">от 17 480</div>
+            </div>
+          </a>
+
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c1.jpg" alt="">
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Standart-3</div>
+              <div class="card--about">Зависимые пружины</div>
+              <div class="price">от 19 760</div>
+            </div>
+          </a>
+
+          <a href="card.html" class="card">
+            <div class="img-c">
+              <img src="./img/c2.jpg" alt="">
+
+            </div>
+            <div class="card--desc">
+              <div class="card--name">Comfort</div>
+              <div class="card--about">независимые пружины</div>
+              <div class="price">от 28 880</div>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="pagging">
+          <a href="#" class="arrow prev"></a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">...</a>
+          <a href="#">10</a>
+          <a href="#" class="arrow next"></a>
+        </div>
+        
+      </div>
+    </main>
+
+
+  </div>
+  <footer class="footer">
+    <div class="f_upper">
+      <div class="container f_grid">
+        <a href="index.html" class="f_logo-link">
+          <img src="./img/logo.png" alt="">
+        </a>
+  
+        <div class="f_col">
+          <div class="f_title">Каталог</div>
+          <ul class="check--list">
+            <li><a href="catalog.html">Матрасы</a></li>
+            <li><a href="catalog.html" class="active">Наматрасники</a></li>
+            <li><a href="catalog.html">Подушки</a></li>
+            <li><a href="catalog.html">Постельное белье</a></li>
+          </ul>
+        </div>
+  
+        <div class="f_col">
+          <div class="f_title">Информация</div>
+          <ul class="check--list">
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+  
+        <div class="f_cts">
+          <div class="col--phone">
+            <a href="tel:+77086274818">+7 (708) 627 48 18</a>
+            <a href="tel:+77776667172">+7 (777) 666 71 72</a>
+          </div>
+          <div class="col--location">
+            <span>Алматинская область,
+              пос. Кызыл Гайрат, ул. Конаева 27</span>
+          </div>
+          <div class="col--email">
+            <a href="mailto:info@almatras.kz">info@almatras.kz</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="f_bottom">
+      <div class="container flex spb center">
+        <div class="copy">Copyright &copy; 2020 Almatras. All rights reserved</div>
+        <div class="socials flex senter">
+          <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+        </div>
+        <div class="art-link">
+          <a href="http://art-media.kz/" target="_blank">Создание сайта</a>
+          <img src="./img/art.png" alt="">
+        </div>
+      </div>
+    </div> 
+  </footer>
+  <script src="js/jquery.js"></script>
+  <script src="js/libs.js"></script>
+  <script>
+    wow = new WOW({
+      boxClass:     'wow',      
+      animateClass: 'animated', 
+      offset:       0,          
+      mobile:       false,       
+      live:         true        
+  })
+  wow.init();		
+  </script>
+  <script src="js/main.js"></script>
+  </body>
+  </html>
