@@ -249,7 +249,7 @@ h3 {
 		font-size: 22px;
 	}
 	@media screen and (max-width: 768px) {
-		font-size: 17px;
+		font-size: 18px;
 	}
 }
 h4 {
@@ -549,13 +549,13 @@ input[type="password"] {
 /* header */
 header {
 
-	@media screen and (max-width: 1000px) {
+	@media screen and (max-width: 900px) {
 		.nav--btn {
-			width: 35px;
+			width: 26px;
 			height: 30px;
 			position: absolute;
-			left: 0;
-			top: 0px;
+			left: 15px;
+			top: 13px;
 			padding: 0;
 			margin: 0;
 			outline: none;
@@ -603,9 +603,47 @@ header {
 .spb {justify-content: space-between;}
 .center {align-items: center;}
 
-.dropdown {position: relative;}
+.dropdown {position: relative; cursor: default;}
 .dropdown-menu {
 	display: none; position: absolute;
+	left: -10px; right: -10px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	top: calc(100% + 18px);
+	padding-top: 7px; padding-bottom: 7px;
+	&:after {
+		transition: 300ms ease-out;
+		position: absolute;
+		content: ' ';
+		left: 50%;
+		top: 0;
+		transform: translate(-50%,  -100%);
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 11px 13px 11px;
+		border-color: transparent transparent #ffffff transparent;
+	}
+	a {
+		display: block; text-align: center; margin: 0 auto;
+		letter-spacing: 0.01em;
+		color: #333333; font-family: $semi;
+		font-size: 14px; padding: .3em 1em;
+		&:hover {color: $main}
+	}
+}
+
+.nav-dropdown .dropdown-menu {
+	min-width: 220px;
+	top: calc(100% + 16px);
+	left: -17px;
+	border-radius: 0 0 5px 5px;
+	a {text-align: left; text-transform: none; font-size: 16px;}
+	&:after {display: none;}
+}
+
+.h-phone-col .dropdown-menu a {
+	color: #333333; &:hover {color: $main}
 }
 
 .trigger {
@@ -621,7 +659,12 @@ header {
 		border-bottom: 1px solid #fff;
 		border-right: 1px solid #fff;
 		transform: rotate(45deg);
+		transition: 300ms ease-out;
 		width: 7px; height: 7px;
+	}
+	&.opened:after {
+		transform: rotate(225deg);
+		// top: -15px;
 	}
 }
 body {padding-top: 148px;}
@@ -740,8 +783,8 @@ body {padding-top: 148px;}
 	.search-bar {display: none;}
 	.dropdown-langs {margin-left: auto;}
 	.h-phone-col {
-		padding-left: 15px;
-		margin-left: 15px;
+		padding-left: 12px;
+		margin-left: 12px;
 		img, .col--phone a {display: none;}
 	}
 	
@@ -760,4 +803,42 @@ body {padding-top: 148px;}
 	.nav {display: none;}
 
 	body {padding-top: 56px;}
+
+	.nav {
+		position: fixed;
+		border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+		padding: 15px;
+		top: 55px;
+		height: auto;
+		left: 0;
+		width: 100%;
+		border-top: 1px solid #000;
+		background: #000000;
+		.nav-link {
+			border: 0;
+			padding: 10px 8px 10px 0;
+		}
+	}
+	.nav .dropdown .dropdown-menu{
+		position: static;
+		border-radius: 0;
+		background: #000000;
+		transform: translateX(-25px);
+		a {
+			color: #fff; padding-left: 0; font-family: $regular;
+			font-size: 14px;
+		}
+	}
+	.h-phone-col .dropdown-menu {
+		min-width: 185px;
+    right: -5px;
+		left: auto;
+		&:after {
+			left: auto; right: 2px;
+		}
+		a {font-size: 16px;}
+	}
+	.header .col--phone {padding-left: 18px;}
+	.h-phone-col .trigger:after {top: -9px}
+	.trigger:after {width: 5px; height: 5px; top: -9px;}
 }

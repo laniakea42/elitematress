@@ -94,6 +94,11 @@ sliders();
 
 $(function(){
 
+    $('.trigger').on('click', function() {
+        $(this).toggleClass('opened');
+        $(this).siblings('.dropdown-menu').slideToggle();
+    })
+
     $("#content>div").hide(); // Скрываем содержание
 	$("#tabs li:first").attr("id","current"); // Активируем первую закладку
 	$("#content div:first").fadeIn(); // Выводим содержание
